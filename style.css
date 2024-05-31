@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+   min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #11071f;
+  color: white;
+}
+
+#header{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.container{
+    padding: 10px 10%;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 120px;
+    position: relative;
+    right: 90px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 40px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+/* .intro{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    left: 8rem;
+    top: -4rem;
+    animation: animate2 0.7s 0.2s;
+} */
+
+/* .intro img {
+    height: 150px;
+    width: 90px;
+    display: flex;
+  } */
+
+  .intro-main {
+    display: flex;
+  
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    flex-direction: row;
+  }
+  .myself {
+    margin-top: 6%;
+    height: 110%;
+    display: flex;
+    align-items: left;
+    animation: animate-on-load 0.7s 0.2s;
+  }
+
+
+  .header-text{
+    margin-top: 8%;
+    margin-left: 5%;
+    font-size: 20px;
+  }
+
+  span{
+    color:#bc7bff;
+  }
+
+  #about{
+    padding: 80px 0;
+    color: #ababab;
+    margin-top: 70px;
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+ width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+} 
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/* ----------------------services-------------------------- */
+#services{
+    padding: 30px 0;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+
+
+/* -----------projects---------------------- */
+
+.projects {
+    padding: 20% 20%;
+    background: radial-gradient(
+        20% 20% at 53% 31%,
+        #763cac 0%,
+        rgba(50, 15, 133, 0) 100%
+      ),
+      radial-gradient(20% 20% at 78% 27%, #763cac 0%, rgba(50, 15, 133, 0) 100%),
+      radial-gradient(20% 20% at 25% 56%, #763cac 0%, rgba(50, 15, 133, 0) 100%);
+  }
+  
+  .my-projects {
+    display: flex;
+    position: relative;
+    margin-bottom: 13rem;
+  }
+  .my-projects2 {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    margin-bottom: 13rem;
+  }
+  
+  .project-left {
+    flex: 1;
+    z-index: 20;
+  }
+  .project-left2 {
+    flex: 1;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    align-items: end;
+  }
+  .project-left span {
+    font-size: 16px;
+  }
+  .project-left p {
+    font-weight: 600;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  .project-left2 span {
+    font-size: 16px;
+  }
+  .project-left2 p {
+    font-weight: 600;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  
+  .project-left2:has(span, p) {
+    text-align: end;
+  }
+  
+  .project-right {
+    flex: 1;
+    background: #2b0b3a;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .project-right2 {
+    flex: 1;
+    background: #2b0b3a;
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+  }
+  
+  .project-right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .project-right2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .wrapper {
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .card {
+    background: radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgba(101, 90, 145, 2.7) 0%,
+      rgba(100, 92, 144, 0.3) 77.08%,
+      rgba(70, 144, 213, 0) 100%
+    );
+    padding: 31px 45px;
+    backdrop-filter: blur(40px);
+    border-radius: 14px;
+    width: 120%;
+    text-align: left;
+    word-break: break-all;
+  }
+  
+  .card p {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .click-img {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .click-img2 {
+    justify-content: end;
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+
+  /*----------contact------------*/
+  #contact{
+    position: relative;
+    bottom: 250px;
+  }
+ 
+  .contact-left{
+    flex-basis: 35%;
+    margin-left: 20px;
+  }
+
+  .contact-right{
+    flex-basis: 60%;
+  }
+
+  .contact-left p{
+    margin-top: 30px;
+  }
+
+  .contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+  }
+
+.btn{
+ display: block;
+ margin: 50px auto;
+ width: fit-content;
+ border: 1px solid #ff004f;
+ padding: 14px 50px;
+ border-radius: 6px;
+ text-decoration: none;
+ color: #fff;
+}
+
+.btn.btn2{
+  display: inline-block;
+  background: #ff004f;
+}
+
+.contact-right form{
+  width: 100%;
+
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+nav .fas{
+  display: none;
+}
+
+
+/*--------------css for small screens----------------*/
+@media only screen and (max-width: 600px){
+  .header-text{
+    margin-top: 110%;
+    font-size: 16px;
+   
+  }
+  .myself{
+    position: relative;
+    left: 50px;
+  }
+  .header-text h1{
+    font-size: 30px;
+    margin-right: 150px;
+  }
+  .header-text{
+    position: relative;
+    right: 150px;
+  }
+  nav .fas{
+    display: block;
+    font-size: 25px;
+    margin-right: -214px;
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title{
+    font-size: 40px;
+  }
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+    
+  }
+  .about-col-1{
+    margin-bottom: 20px;
+    position: relative;
+    left: 20px;
+  }
+  .about-col-1 img{
+    width: 350px;
+    padding: auto;
+    margin: auto;
+  }
+  .about-col-2{
+    padding: auto;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .contact-left{
+    flex-basis: 100%;
+    margin-top: 230px;
+  }
+
+  .contact-right{
+    flex-basis: 100%;
+  }
+ 
+}
+
+@media screen and (max-width:1200px) {
+ 
+
+  .intro-para{
+    margin-top:1rem;
+  }
+  
+    
+    .click-img, .click-img2{
+      display: none;
+    }
+  .circle{
+    bottom: 87px;
+  }
+    
+  .main-container{
+    margin: 0 10%;
+  }
+  .my-projects{
+    flex-direction: column;
+  }
+  .my-projects2{
+    flex-direction: column;
+  }
+
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card{
+    display: flex;
+    z-index: -200;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .card p{
+    margin-bottom: 0;
+   }
+   #services{
+    position: relative;
+    left: 30px;
+   }
+   #about{
+    position: relative;
+    left: 30px;
+   }
+    
+   #contact{
+    position: relative;
+    left: 30px;
+   }
+    
+  }
+
+  @media screen and (max-width:768px) {
+  
+  
+
+    .projects{
+      padding: 5%;
+    }
+  
+   .card{
+    padding: 0.5rem;
+    position: relative;
+    left: 40px;
+   }
+  
+  
+    
+  .main-container{
+    margin: 0 5%;
+  }
+  .card p{
+    font-size: 16px;
+    width: 100%;
+  }
+  .my-projects{
+    margin-bottom: 2rem;
+  }
+  .my-projects2{
+    margin-bottom: 5rem;
+  }
+  .project-right, .project-right2{
+    position: relative;
+    left: 40px;
+  }
+ 
+   .project-left,.project-left2{
+    text-align: center;
+    align-items: center;
+  } 
+  
+  .project-left span{
+    font-size: 30px;
+    position: relative;
+    left: 40px;
+  }
+
+  .project-left2 span{
+    font-size: 30px;
+    position: relative;
+    left: 40px;
+  }
+  .pp{
+    position: relative;
+    left: 40px;
+  }
+  .mm{
+    position: relative;
+    left: 40px;
+  }
+}

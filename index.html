@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajapati Gajendra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a26317b6cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/G.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+          <div class="intro-main">
+            <div class="myself">
+                <img src="assets/Me.png" alt="my-avatar" class="me" />
+            </div>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hello,<br>I'm  <span>Prajapati Gajendra</span> <br>From Ahmedabad</h1>
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+
+<!--------------------------------about---------------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/A skilled developer.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A self-taught Frontend Engineer, currently i am fresher
+                        I make meaningful and delightful digital products that create an equilibrium
+                        between user needs and business goals.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Html</span><br>create a web page</li>
+                            <li><span>Css</span><br>Design a web page</li>
+                            <li><span>Javascript</span></li>
+                            <li><span>React js</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>3 months</span><br>React js training at breanybeam technologies</li>
+                            <li><span>15 days</span><br>Front End training at Vnurture technologies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                           <li><span>2017</span><br>Sarthak Vidhyalay</li>
+                           <li><span>2019</span><br>Sarthak Higher Secondary School</li>
+                           <li><span>2023</span><br>Gandhinagar Institute of Technology</li>
+                        </ul>
+                    </div>
+
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------services------------------------------------------------>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Make a responsive Web design</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Make a UI/UX design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------projects----------------------------------------------------->
+    <div class="projects" id="projects">
+        <div class="my-projects">
+
+            <div class="project-left">
+              <span>Featured Projects</span>
+              <p class="pp">Ecommerce Website</p>
+  
+              <div class="card">
+                <p>
+                  Developed an ecommerce website with detailed products list, shopping cart and login logout features with Auth authentication
+                </p>
+              </div>
+              <div class="click-img">
+                <img
+                  src="assets/click.svg"
+                  alt="the click image for decoration"
+                />
+                <img
+                  src="assets/click.svg"
+                  alt="the click image for decoration"
+                />
+              </div>
+            </div>
+            <div class="project-right">
+              <img src="assets/Screenshot (1).png" alt="my projects" />
+            </div>
+          </div>
+
+          <div class="my-projects2">
+            <div class="project-left2">
+              <span class="FP">Featured Projects</span>
+              <p class="mm">Tour Spark</p>
+  
+              <div class="card">
+                <p>
+                  This is a simple project which has multiple components like Home
+                  Contact About Service which I have created with the help of
+                  routing.
+                </p>
+              </div>
+              <div class="click-img2">
+                <img src="assets/click.svg" alt="click image for decoration" />
+                <img src="assets/click.svg" alt="click image for decoration" />
+              </div>
+            </div>
+            <div class="project-right2">
+              <img src="assets/Screenshot (2).png" alt="my projects" />
+            </div>
+          </div>
+
+          <div class="my-projects">
+
+            <div class="project-left">
+              <span>Featured Projects</span>
+              <p class="pp">Tic Tac Toe Game</p>
+  
+              <div class="card">
+                <p>
+                  The tic tac toe game is for Two players in this game I have used React js and js logic. One player plays X and the other plays O. The players take turns placing their marks on
+                  a grid of three-by-three cells. If a given player gets three marks in a row horizontally, vertically, or diagonally, then that player wins the game
+                </p>
+              </div>
+              <div class="click-img">
+                <img
+                  src="assets/click.svg"
+                  alt="the click image for decoration"
+                />
+                <img
+                  src="assets/click.svg"
+                  alt="the click image for decoration"
+                />
+              </div>
+            </div>
+            <div class="project-right">
+              <img src="assets/Screenshot (4).png" alt="my projects" />
+            </div>
+          </div>
+          
+    </div>
+
+    <!--------------------------------------contact --------------------------------------------->
+    <div id="contact">
+       <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>prajapatigajendra36@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>6352982636</p>
+            <a href="assets/Prajapati Gajendra resume.pdf" download="btn btn2" class="btn btn2">Download Cv</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+       </div>
+      
+    </div>
+
+    <script>
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+
+    </script>
+
+    <script>
+
+      var sidemeu = document.getElementById("sidemenu")
+
+      function openmenu(){
+        sidemeu.style.right = "0";
+      }
+      function closemenu(){
+        sidemeu.style.right = "-200px";
+      }
+
+    </script>
+   
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwQwcNY-HsAJAVo9Fq-mL4O4gveo5tKSK1cx5clpfVFX2TT1KqhUt70uQvxf3ukd7f_yQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
